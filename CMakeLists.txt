@@ -51,3 +51,8 @@ endif()
 if(SAF_INTENTIONAL_COMPILE_WARNING)
   add_executable(icw intentional_compile_warning.cxx)
 endif()
+
+if(SAF_INTENTIONAL_MEMORY_LEAK)
+  add_executable(iml intentional_memory_leak.cxx)
+  add_test(intentional_memory_leak iml)
+endif()

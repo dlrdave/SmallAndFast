@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 int main(int argc, const char* argv[])
 {
   const char *leak = (const char *) malloc(42); // no free, intentionally
